@@ -6,9 +6,9 @@ function App() {
   return(
     <main>
       <section className='container'>
-        <h3>0 birthdays today</h3>
-        <List/>
-        <button onClick={()=> console.log('ypu clicked me')}>
+        <h3>{people.length} birthdays today</h3>
+        <List people={people}/>
+        <button onClick={()=>setPeople([])}>
           Clear all
         </button>
       </section>
